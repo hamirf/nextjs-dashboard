@@ -5,6 +5,8 @@ import RevenueChart from "../../ui/dashboard/revenue-chart";
 import { lusitana } from "../../ui/fonts";
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from "@/app/ui/skeletons";
 
+export const revalidate = 30;
+
 export default async function Page() {
     // Parallel fetch
     // const [

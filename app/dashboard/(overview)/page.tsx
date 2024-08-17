@@ -5,19 +5,7 @@ import RevenueChart from "../../ui/dashboard/revenue-chart";
 import { lusitana } from "../../ui/fonts";
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from "@/app/ui/skeletons";
 
-export const revalidate = 30;
-
 export default async function Page() {
-    // Parallel fetch
-    // const [
-    //     revenue, 
-    //     latestInvoices, 
-    //     { numberOfCustomers, numberOfInvoices, totalPaidInvoices, totalPendingInvoices }
-    // ] = await Promise.all([
-    //     fetchRevenue(),
-    //     fetchLatestInvoices(),
-    //     fetchCardData()
-    // ]);
     return (
         <main>
             <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
